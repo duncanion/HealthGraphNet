@@ -20,7 +20,16 @@ namespace HealthGraphNet.Models
         /// </summary>
         [JsonProperty(PropertyName = "start_time")]
         public DateTime StartTime { get; internal set; }
-        
+
+
+        //
+        /// <summary>
+        /// The UTC offset of the timezone for the activity (if available).  Read only.
+        /// </summary>
+        [JsonProperty(PropertyName = "utc_offset")]
+        public int UTCOffset { get; internal set; }
+
+
         /// <summary>
         /// The total distance for the activity, in meters.  Read only.
         /// </summary>
